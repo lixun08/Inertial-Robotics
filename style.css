@@ -1,0 +1,264 @@
+:root {
+  /* Color */
+  --white-color: #fff;
+  --black-color: #140a00;
+  --blue-color: #173758;
+  --red-color: #ff0000;
+  --orange-color: #b58435;
+  --grey-dark-color: #909090;
+  --grey-light-color: #e0e0e0;
+
+  /* Size */
+  --padding: 12px;
+  --avatar-size: 36px;
+
+  /* Font Size */
+  --font-large: 24px;
+  --font-medium: 20px;
+  --font-small: 16px;
+  --font-micro: 12px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Oswald";
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+/* Nav bar*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  background-color: var(--blue-color);
+  color: var(--white-color);
+}
+
+.navbar-logo {
+  font-size: 24px;
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+.navbar-logo i {
+  transform: rotate(270deg);
+  color: var(--orange-color);
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+.navbar-menu li {
+  padding: 8px 12px;
+}
+
+.navbar-menu li:hover {
+  background-color: var(--orange-color);
+  border-radius: 4px;
+}
+
+.navbar-icons {
+  list-style: none;
+  color: var(--white-color);
+  display: flex;
+  padding-left: 0;
+}
+
+.navbar-icons i {
+  padding: 8px 12px;
+}
+
+.navbar-toggleBtn {
+  display: none;
+  position: absolute;
+  right: 32px;
+  font-size: 24px;
+  color: var(--orange-color);
+}
+
+/* Video Player */
+.player {
+  text-align: center;
+  background-color: var(--black-color);
+}
+
+.player video {
+  height: 100%;
+  width: 100%;
+  max-width: 1000px;
+}
+
+/* Main */
+.main-feature {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white-color);
+}
+
+/* About Us */
+.about-us {
+  display: flex;
+  padding: 100px;
+}
+
+.about-us .about-us-img {
+  width: 30%;
+  height: 100%;
+  border-radius: 30px;
+  padding: var(--padding);
+}
+
+.about-us .about-us-text {
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+}
+
+.about-us .about-us-text h3 {
+  font-size: var(--font-large);
+  padding-top: var(--padding);
+  color: var(--blue-color);
+}
+
+.about-us .about-us-text p {
+  font-size: var(--font-medium);
+  padding: 12px, 0px, 12px, 100px;
+  color: var(--blue-color);
+}
+
+.about-us .about-us-text button {
+  display: flex;
+  color: var(--grey-dark-color);
+  background-color: var(--blue-color);
+  border-radius: 5%;
+  padding: 10px;
+  margin: 10px;
+  margin-left: 0;
+}
+
+/* Contact Us */
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--font-medium);
+  padding: 10px 100px;
+  background-color: var(--blue-color);
+  margin: 0;
+}
+
+.contact-us h3 {
+  color: var(--white-color);
+  font-size: var(--font-large);
+  text-align: center;
+  padding: 12px;
+}
+
+.contact-us textarea {
+  padding: var(--padding);
+  color: var(--blue-color);
+  height: 150px;
+}
+
+.contact-us button {
+  color: var(--grey-dark-color);
+  background-color: var(--blue-color);
+  border-radius: 5%;
+  padding: 10px;
+  width: 100%;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: var(--padding);
+}
+
+footer p {
+  color: var(--blue-color);
+  font-size: var(--font-micro);
+}
+
+@media screen and (max-width: 768px) {
+  /* Nav bar */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navbar-menu li {
+    width: 100%;
+    text-align: center;
+    padding-left: 8px 24px;
+  }
+
+  .navbar-icons {
+    display: none;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .navbar-toggleBtn {
+    display: block;
+  }
+
+  .navbar-menu.active,
+  .navbar-icons.active {
+    display: flex;
+  }
+
+  /* main-feature */
+  .main-feature {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* about us */
+  .main-feature .about-us {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-feature .about-us-img {
+    width: 100%;
+    border-radius: 7.5%;
+  }
+  .main-feature .contact-us button {
+    padding: calc(var(--padding) / 2);
+    margin-left: 0%;
+    width: 15%;
+  }
+
+  /* Contact Us */
+  .contact-us {
+    margin: 0;
+  }
+  .main-feature .contact-us h3 {
+    margin-top: 7.5%;
+  }
+  .main-feature .contact-us input {
+    margin-top: 2.5%;
+  }
+  .main-feature .contact-us button {
+    margin-top: 2.5%;
+  }
+}
