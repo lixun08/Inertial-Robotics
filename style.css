@@ -199,66 +199,83 @@ footer p {
     align-items: flex-start;
   }
 
-  .navbar-menu {
+  .navbar .navbar-menu {
     display: none;
     flex-direction: column;
     align-items: center;
     width: 100%;
+    padding: 1%;
   }
 
-  .navbar-menu li {
-    width: 100%;
+  .navbar .navbar-menu li {
+    width: 80%;
     text-align: center;
-    padding-left: 8px 24px;
   }
 
-  .navbar-icons {
+  .navbar .navbar-icons {
     display: none;
     justify-content: center;
     width: 100%;
   }
 
-  .navbar-toggleBtn {
+  .navbar .navbar-toggleBtn {
     display: block;
   }
 
-  .navbar-menu.active,
-  .navbar-icons.active {
+  .navbar .navbar-menu.active,
+  .navbar .navbar-icons.active {
     display: flex;
   }
 
-  /* main-feature */
-  .main-feature {
-    display: flex;
-    flex-direction: column;
+  /* Player */
+  .player {
+    width: 100%;
+    height: 100%;
   }
 
+  .player video {
+    padding-top: 14.8px;
+    padding-bottom: 10px;
+  }
   /* about us */
   .main-feature .about-us {
     display: flex;
     flex-direction: column;
+    padding: 3.125rem;
+    padding-top: 6.25rem;
   }
+
   .main-feature .about-us-img {
     width: 100%;
-    border-radius: 7.5%;
+    border-radius: 15%;
   }
-  .main-feature .contact-us button {
+
+  .main-feature .about-us-text {
+    padding-left: 0.625rem;
+  }
+
+  .main-feature .about-us-text button {
+    display: block;
+    border: none;
     padding: calc(var(--padding) / 2);
-    margin-left: 0%;
-    width: 15%;
+    width: 30%;
   }
 
   /* Contact Us */
   .contact-us {
     margin: 0;
+    padding: 1.25rem 1.875rem;
   }
-  .main-feature .contact-us h3 {
-    margin-top: 7.5%;
-  }
+
   .main-feature .contact-us input {
     margin-top: 2.5%;
   }
-  .main-feature .contact-us button {
+
+  .contact-us button {
+    padding: calc(var(--padding) / 2);
+    width: 100%;
     margin-top: 2.5%;
+    border: 0.0625rem solid var(--orange-color);
+    border-radius: 0%;
   }
 }
