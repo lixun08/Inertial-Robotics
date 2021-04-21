@@ -26,7 +26,7 @@
 }
 
 body {
-  font-family: "Oswald";
+  font-family: "roboto";
   margin: 0;
 }
 
@@ -43,6 +43,8 @@ a {
   padding: 8px 12px;
   background-color: var(--blue-color);
   color: var(--white-color);
+  font-family: "oswald";
+  letter-spacing: 1px;
 }
 
 .navbar-logo {
@@ -129,9 +131,12 @@ a {
 }
 
 .about-us .about-us-text h3 {
-  font-size: var(--font-large);
+  font-size: 30px;
   padding-top: var(--padding);
   color: var(--blue-color);
+  font-family: "oswald";
+  padding-bottom: 20px;
+  letter-spacing: 2px;
 }
 
 .about-us .about-us-text p {
@@ -142,12 +147,17 @@ a {
 
 .about-us .about-us-text button {
   display: flex;
-  color: var(--grey-dark-color);
+  align-items: center;
+  justify-content: center;
+  color: var(--white-color);
   background-color: var(--blue-color);
-  border-radius: 5%;
+  border-radius: 8px;
   padding: 10px;
-  margin: 10px;
+  margin: 15px;
   margin-left: 0;
+  width: 10%;
+  border: none;
+  cursor: pointer;
 }
 
 /* Contact Us */
@@ -167,6 +177,14 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+#contact-us h1 {
+  margin-bottom: 60px;
+  color: var(--white-color);
+  font-family: "oswald";
+  letter-spacing: 2px;
+  font-size: 30px;
 }
 
 .container {
@@ -227,8 +245,12 @@ button[type="submit"]:hover {
 }
 
 #status.success {
-  background-color: #aacdbe;
+  background-color: var(--orange-color);
   animation: status 4s ease forwards;
+  color: white;
+  font-size: 20px;
+  font-family: "roboto";
+  padding: 15px auto;
 }
 
 #status.error {
@@ -328,7 +350,7 @@ footer p {
     display: block;
     border: none;
     padding: calc(var(--padding) / 2);
-    width: 30%;
+    width: 15%;
   }
 
   /* Contact Us */
