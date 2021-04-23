@@ -234,6 +234,7 @@ button[type="submit"]:hover {
   text-align: center;
   padding: 10px;
   margin: 0 auto;
+  margin-bottom: 1rem;
   border-radius: 8px;
 }
 
@@ -337,9 +338,8 @@ footer p {
   }
 
   .main-feature .about-us-text {
-    padding: 0;
+    padding: calc(var(--padding) * 2);
     padding-top: 1rem;
-    padding-left: 2rem;
   }
 
   .main-feature .about-us-text button {
@@ -347,5 +347,9 @@ footer p {
     border: none;
     padding: var(--padding);
     width: 30%;
+  }
+
+  #status {
+    margin-bottom: 1rem;
   }
 }
