@@ -180,7 +180,7 @@ a {
 }
 
 .container {
-  width: 100%;
+  width: 90%;
   max-width: 500px;
   margin-top: 0;
   margin-bottom: 1rem;
@@ -325,24 +325,22 @@ footer p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 2rem;
   }
 
   .main-feature .about-us-img {
-    width: 80%;
+    width: 90%;
     border-radius: 15%;
   }
 
   .main-feature .about-us-text {
-    padding-left: 0.625rem;
+    padding: 0;
   }
 
-  .main-feature .about-us-text h3 {
-    padding-top: 2rem;
-  }
   .main-feature .about-us-text button {
     display: block;
     border: none;
-    padding: calc(var(--padding) / 2);
-    width: 15%;
+    padding: var(--padding);
+    width: 30%;
   }
 }
