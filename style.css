@@ -121,6 +121,8 @@ a {
   width: 20%;
   border-radius: 45px;
   padding: var(--padding);
+  min-width: 250px;
+  max-height: 380px;
 }
 
 .about-us .about-us-text {
@@ -331,10 +333,13 @@ footer p {
   .main-feature .about-us-img {
     width: 90%;
     border-radius: 15%;
+    max-height: 700px;
   }
 
   .main-feature .about-us-text {
     padding: 0;
+    padding-top: 1rem;
+    padding-left: 2rem;
   }
 
   .main-feature .about-us-text button {
